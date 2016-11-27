@@ -16,23 +16,34 @@ import Foundation
 class Problem0002 {
 
 	func sumOfEvenFibonacciNumbersLessThan(maxNumber: Int) -> Int {
-		if maxNumber == 90 {
-			let fibonacciNumbers = fibonacciNumbersLessThan(maxNumber: maxNumber)
-			let evenFibonacciNumbers = onlyEvenFibonacciNumbersFrom(fibonacciNumbers: fibonacciNumbers)
+		let fibonacciNumbers = fibonacciNumbersLessThan(maxNumber: maxNumber)
+		let evenFibonacciNumbers = onlyEvenFibonacciNumbersFrom(fibonacciNumbers: fibonacciNumbers)
 
-			var sum = 0
-			for evenFibonacciNumber in evenFibonacciNumbers {
-				sum += evenFibonacciNumber
-			}
-
-			return sum
+		var sum = 0
+		for evenFibonacciNumber in evenFibonacciNumbers {
+			sum += evenFibonacciNumber
 		}
 
-		return 0;
+		return sum
 	}
 
 	func fibonacciNumbersLessThan(maxNumber: Int) -> [Int] {
-		let fibonacciNumbers = [1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+
+		var fibonacciNumbers = [Int]()
+
+		var previousFibonacciNumber = 0
+		var nextFibonacciNumber = 1
+
+		while (previousFibonacciNumber < maxNumber) {
+			let sum = previousFibonacciNumber + nextFibonacciNumber
+			previousFibonacciNumber = nextFibonacciNumber
+			nextFibonacciNumber = sum
+
+			if (sum < maxNumber) {
+    			fibonacciNumbers.append(sum)
+			}
+		}
+
 		return fibonacciNumbers
 	}
 
