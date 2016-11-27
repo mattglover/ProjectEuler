@@ -10,5 +10,8 @@
 import Foundation
 
 class Problem0001 {
-
+	
+	func sumOfMultiples3And5Below(number: Int) -> Int {
+		return 0
+	}
 }
