@@ -21,7 +21,7 @@ class Problem0003_Largest_Prime_FactorTests: XCTestCase {
 
 	func testPrimeFactorsOf13195_are5_7_13_29() {
 
-		let primeFactors = sut.primeFactorsFrom(number: 13195)
+		let primeFactors = sut.primeFactorsFor(number: 13195)
 
 		XCTAssertEqual(4,  primeFactors.count)
 		XCTAssertEqual(5,  primeFactors[0])
@@ -30,10 +30,14 @@ class Problem0003_Largest_Prime_FactorTests: XCTestCase {
 		XCTAssertEqual(29, primeFactors[3])
 	}
 
+	func testLargestPrimeFactorsOf13195_is29() {
+		XCTAssertEqual(29, sut.largestPrimeFactorFor(number: 13195))
+	}
+
 	// MARK: Sanity test
 	func testPrimeFactorsOf299_are13_23() {
 
-		let primeFactors = sut.primeFactorsFrom(number: 299)
+		let primeFactors = sut.primeFactorsFor(number: 299)
 
 		XCTAssertEqual(2,  primeFactors.count)
 		XCTAssertEqual(13, primeFactors[0])

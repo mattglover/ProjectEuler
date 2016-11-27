@@ -10,12 +10,19 @@ import Foundation
 
 class Problem0003 {
 
-	func primeFactorsFrom(number: Int) -> [Int] {
+	func largestPrimeFactorFor(number: Int) -> Int? {
+		let primeFactors = primeFactorsFor(number: number)
+		return primeFactors.last
+	}
+
+	func primeFactorsFor(number: Int) -> [Int] {
 		let allPrimeNumbers = allPrimeNumbersUpTo(number: number)
+		print("Number of Prime Numbers : \(allPrimeNumbers.count)")
 		var primeFactors = [Int]()
 
 		for primeNumber in allPrimeNumbers {
 			if (number % primeNumber == 0) {
+				print("Adding Prime Factor: \(primeNumber)")
 				primeFactors.append(primeNumber)
 			}
 		}
@@ -23,7 +30,7 @@ class Problem0003 {
 		return primeFactors
 	}
 
-	func allPrimeNumbersUpTo(number: Int) -> [Int] {
+	private func allPrimeNumbersUpTo(number: Int) -> [Int] {
 		var primeNumbers = [Int]()
 
 		for num in 2..<number {
@@ -35,7 +42,7 @@ class Problem0003 {
 		return primeNumbers
 	}
 
-	func isPrimeNumber(_ number: Int) -> Bool {
+	private func isPrimeNumber(_ number: Int) -> Bool {
 
 		if number == 1 {
 			return true
