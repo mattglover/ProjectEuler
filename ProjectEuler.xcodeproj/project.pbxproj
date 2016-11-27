@@ -14,6 +14,8 @@
 		B2D115031DEB5B7900873323 /* Problem0001.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D115021DEB5B7900873323 /* Problem0001.swift */; };
 		B2D115051DEB688D00873323 /* Problem0002.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D115041DEB688D00873323 /* Problem0002.swift */; };
 		B2D115071DEB68BD00873323 /* Problem0002_Even_Fibonacci_NumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D115061DEB68BD00873323 /* Problem0002_Even_Fibonacci_NumbersTests.swift */; };
+		B2D115091DEB774100873323 /* Problem0003_Largest_Prime_FactorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D115081DEB774100873323 /* Problem0003_Largest_Prime_FactorTests.swift */; };
+		B2D1150B1DEB775C00873323 /* Problem0003.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D1150A1DEB775C00873323 /* Problem0003.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		B2D115021DEB5B7900873323 /* Problem0001.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem0001.swift; sourceTree = "<group>"; };
 		B2D115041DEB688D00873323 /* Problem0002.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem0002.swift; sourceTree = "<group>"; };
 		B2D115061DEB68BD00873323 /* Problem0002_Even_Fibonacci_NumbersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem0002_Even_Fibonacci_NumbersTests.swift; sourceTree = "<group>"; };
+		B2D115081DEB774100873323 /* Problem0003_Largest_Prime_FactorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem0003_Largest_Prime_FactorTests.swift; sourceTree = "<group>"; };
+		B2D1150A1DEB775C00873323 /* Problem0003.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem0003.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 				B2D114F51DEB5A0700873323 /* Info.plist */,
 				B2D114FE1DEB5B0600873323 /* Problem0001_Multiples_Of_3_and_5Tests.swift */,
 				B2D115061DEB68BD00873323 /* Problem0002_Even_Fibonacci_NumbersTests.swift */,
+				B2D115081DEB774100873323 /* Problem0003_Largest_Prime_FactorTests.swift */,
 			);
 			path = ProjectEulerTests;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 			children = (
 				B2D115021DEB5B7900873323 /* Problem0001.swift */,
 				B2D115041DEB688D00873323 /* Problem0002.swift */,
+				B2D1150A1DEB775C00873323 /* Problem0003.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -220,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2D1150B1DEB775C00873323 /* Problem0003.swift in Sources */,
 				B2D115031DEB5B7900873323 /* Problem0001.swift in Sources */,
 				B2D114DF1DEB5A0700873323 /* AppDelegate.swift in Sources */,
 				B2D115051DEB688D00873323 /* Problem0002.swift in Sources */,
@@ -232,6 +239,7 @@
 			files = (
 				B2D114FF1DEB5B0600873323 /* Problem0001_Multiples_Of_3_and_5Tests.swift in Sources */,
 				B2D115071DEB68BD00873323 /* Problem0002_Even_Fibonacci_NumbersTests.swift in Sources */,
+				B2D115091DEB774100873323 /* Problem0003_Largest_Prime_FactorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +436,7 @@
 				B2D114FA1DEB5A0700873323 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2D114FB1DEB5A0700873323 /* Build configuration list for PBXNativeTarget "ProjectEulerTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +445,7 @@
 				B2D114FD1DEB5A0700873323 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
