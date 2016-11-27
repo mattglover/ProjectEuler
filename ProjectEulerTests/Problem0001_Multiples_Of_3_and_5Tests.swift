@@ -22,4 +22,9 @@ class Problem0001_Multiples_Of_3_and_5Tests: XCTestCase {
 	func testSumOfMultiplesOf3And5Below10_is23() {
 		XCTAssertEqual(sut.sumOfMultiples3And5Below(number: 10), 23)
 	}
+
+	// MARK: Sanity Test .. can be deleted
+	func testSumOfMultiplesOf3And5Below11_is33() {
+		XCTAssertEqual(sut.sumOfMultiples3And5Below(number: 11), 33)
+	}
 }
