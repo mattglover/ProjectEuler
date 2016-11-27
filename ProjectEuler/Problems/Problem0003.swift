@@ -11,20 +11,16 @@ import Foundation
 class Problem0003 {
 
 	func primeFactorsFrom(number: Int) -> [Int] {
-		if (number == 13195) {
-			let allPrimeNumbers = allPrimeNumbersUpTo(number: number)
-			var primeFactors = [Int]()
+		let allPrimeNumbers = allPrimeNumbersUpTo(number: number)
+		var primeFactors = [Int]()
 
-			for primeNumber in allPrimeNumbers {
-				if (number % primeNumber == 0) {
-					primeFactors.append(primeNumber)
-				}
+		for primeNumber in allPrimeNumbers {
+			if (number % primeNumber == 0) {
+				primeFactors.append(primeNumber)
 			}
-
-			return primeFactors
 		}
 
-		return [Int]()
+		return primeFactors
 	}
 
 	func allPrimeNumbersUpTo(number: Int) -> [Int] {
