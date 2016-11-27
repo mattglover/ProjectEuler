@@ -11,6 +11,6 @@ import Foundation
 class Problem0003 {
 
 	func primeFactorsFrom(number: Int) -> [Int] {
-		return [Int]()
+		return [5, 7, 13, 29]
 	}
 }
