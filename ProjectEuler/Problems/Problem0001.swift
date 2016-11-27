@@ -12,10 +12,26 @@ import Foundation
 class Problem0001 {
 	
 	func sumOfMultiples3And5Below(number: Int) -> Int {
-		if number == 10 {
-			return 23
-		} else {
-			return 0
+
+		let multiples = multiples3And5Below(number: number)
+
+		var sum = 0
+		for multiple in multiples {
+			sum += multiple
 		}
+
+		return sum
+	}
+
+	private func multiples3And5Below(number: Int) -> [Int] {
+		var multiples = [Int]()
+
+		for num in 0..<number {
+			if (num % 3 == 0 || num % 5 == 0) {
+    			multiples.append(num)
+			}
+		}
+
+		return multiples
 	}
 }
