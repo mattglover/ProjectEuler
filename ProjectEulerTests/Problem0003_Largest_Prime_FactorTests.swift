@@ -24,10 +24,10 @@ class Problem0003_Largest_Prime_FactorTests: XCTestCase {
 		let primeFactors = sut.primeFactorsFrom(number: 13195)
 
 		XCTAssertEqual(4,  primeFactors.count)
-//		XCTAssertEqual(5,  primeFactors[0])
-//		XCTAssertEqual(7,  primeFactors[1])
-//		XCTAssertEqual(13, primeFactors[2])
-//		XCTAssertEqual(29, primeFactors[3])
+		XCTAssertEqual(5,  primeFactors[0])
+		XCTAssertEqual(7,  primeFactors[1])
+		XCTAssertEqual(13, primeFactors[2])
+		XCTAssertEqual(29, primeFactors[3])
 	}
 
 }
