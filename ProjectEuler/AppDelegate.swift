@@ -20,6 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //		let answer = problem0001.sumOfMultiples3And5Below(number: 1000)
 //		print("Problem 0001: \(answer)")
 
+//		let problem0002 = Problem0002()
+//		let answer = problem0002.sumOfEvenFibonacciNumbersLessThan(maxNumber: 4000000)
+//		print("Problem 0002: \(answer)")
+
 		return true
 	}
 }
