@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B2D114DF1DEB5A0700873323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D114DE1DEB5A0700873323 /* AppDelegate.swift */; };
-		B2D114E11DEB5A0700873323 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D114E01DEB5A0700873323 /* ViewController.swift */; };
-		B2D114E41DEB5A0700873323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D114E21DEB5A0700873323 /* Main.storyboard */; };
 		B2D114E61DEB5A0700873323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D114E51DEB5A0700873323 /* Assets.xcassets */; };
 		B2D114E91DEB5A0700873323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D114E71DEB5A0700873323 /* LaunchScreen.storyboard */; };
-		B2D114F41DEB5A0700873323 /* ProjectEulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D114F31DEB5A0700873323 /* ProjectEulerTests.swift */; };
+		B2D114FF1DEB5B0600873323 /* Problem0001_Multiples_Of_3_and_5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D114FE1DEB5B0600873323 /* Problem0001_Multiples_Of_3_and_5Tests.swift */; };
+		B2D115031DEB5B7900873323 /* Problem0001.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D115021DEB5B7900873323 /* Problem0001.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +27,13 @@
 /* Begin PBXFileReference section */
 		B2D114DB1DEB5A0700873323 /* ProjectEuler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectEuler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D114DE1DEB5A0700873323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2D114E01DEB5A0700873323 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B2D114E31DEB5A0700873323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2D114E51DEB5A0700873323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2D114E81DEB5A0700873323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2D114EA1DEB5A0700873323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2D114EF1DEB5A0700873323 /* ProjectEulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectEulerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2D114F31DEB5A0700873323 /* ProjectEulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectEulerTests.swift; sourceTree = "<group>"; };
 		B2D114F51DEB5A0700873323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D114FE1DEB5B0600873323 /* Problem0001_Multiples_Of_3_and_5Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem0001_Multiples_Of_3_and_5Tests.swift; sourceTree = "<group>"; };
+		B2D115021DEB5B7900873323 /* Problem0001.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem0001.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +75,8 @@
 		B2D114DD1DEB5A0700873323 /* ProjectEuler */ = {
 			isa = PBXGroup;
 			children = (
-				B2D114DE1DEB5A0700873323 /* AppDelegate.swift */,
-				B2D114E01DEB5A0700873323 /* ViewController.swift */,
-				B2D114E21DEB5A0700873323 /* Main.storyboard */,
-				B2D114E51DEB5A0700873323 /* Assets.xcassets */,
-				B2D114E71DEB5A0700873323 /* LaunchScreen.storyboard */,
-				B2D114EA1DEB5A0700873323 /* Info.plist */,
+				B2D115011DEB5B5500873323 /* AppDelegate and Resources */,
+				B2D115001DEB5B3800873323 /* Problems */,
 			);
 			path = ProjectEuler;
 			sourceTree = "<group>";
@@ -90,10 +84,29 @@
 		B2D114F21DEB5A0700873323 /* ProjectEulerTests */ = {
 			isa = PBXGroup;
 			children = (
-				B2D114F31DEB5A0700873323 /* ProjectEulerTests.swift */,
 				B2D114F51DEB5A0700873323 /* Info.plist */,
+				B2D114FE1DEB5B0600873323 /* Problem0001_Multiples_Of_3_and_5Tests.swift */,
 			);
 			path = ProjectEulerTests;
+			sourceTree = "<group>";
+		};
+		B2D115001DEB5B3800873323 /* Problems */ = {
+			isa = PBXGroup;
+			children = (
+				B2D115021DEB5B7900873323 /* Problem0001.swift */,
+			);
+			path = Problems;
+			sourceTree = "<group>";
+		};
+		B2D115011DEB5B5500873323 /* AppDelegate and Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2D114DE1DEB5A0700873323 /* AppDelegate.swift */,
+				B2D114E51DEB5A0700873323 /* Assets.xcassets */,
+				B2D114E71DEB5A0700873323 /* LaunchScreen.storyboard */,
+				B2D114EA1DEB5A0700873323 /* Info.plist */,
+			);
+			name = "AppDelegate and Resources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +165,7 @@
 					B2D114EE1DEB5A0700873323 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = ZPM2H2GDXG;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B2D114DA1DEB5A0700873323;
 					};
@@ -183,7 +197,6 @@
 			files = (
 				B2D114E91DEB5A0700873323 /* LaunchScreen.storyboard in Resources */,
 				B2D114E61DEB5A0700873323 /* Assets.xcassets in Resources */,
-				B2D114E41DEB5A0700873323 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2D114E11DEB5A0700873323 /* ViewController.swift in Sources */,
+				B2D115031DEB5B7900873323 /* Problem0001.swift in Sources */,
 				B2D114DF1DEB5A0700873323 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,7 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2D114F41DEB5A0700873323 /* ProjectEulerTests.swift in Sources */,
+				B2D114FF1DEB5B0600873323 /* Problem0001_Multiples_Of_3_and_5Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +238,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B2D114E21DEB5A0700873323 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B2D114E31DEB5A0700873323 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B2D114E71DEB5A0700873323 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -368,11 +373,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = ZPM2H2GDXG;
 				INFOPLIST_FILE = ProjectEulerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duchysoftware.ProjectEulerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectEuler.app/ProjectEuler";
 			};
@@ -383,6 +390,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = ZPM2H2GDXG;
 				INFOPLIST_FILE = ProjectEulerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
