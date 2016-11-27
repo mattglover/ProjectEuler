@@ -37,7 +37,13 @@ class Problem0002 {
 	}
 
 	func onlyEvenFibonacciNumbersFrom(fibonacciNumbers: [Int]) -> [Int] {
-		let evenFibonacciNumbers = [2, 8, 34]
+		var evenFibonacciNumbers = [Int]()
+		for fibonacciNumber in fibonacciNumbers {
+			if (fibonacciNumber % 2 == 0) {
+    			evenFibonacciNumbers.append(fibonacciNumber)
+			}
+		}
+
 		return evenFibonacciNumbers
 	}
 }
