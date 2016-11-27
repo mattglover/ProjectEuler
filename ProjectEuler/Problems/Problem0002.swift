@@ -27,7 +27,7 @@ class Problem0002 {
 		return sum
 	}
 
-	func fibonacciNumbersLessThan(maxNumber: Int) -> [Int] {
+	private func fibonacciNumbersLessThan(maxNumber: Int) -> [Int] {
 
 		var fibonacciNumbers = [Int]()
 
@@ -47,7 +47,7 @@ class Problem0002 {
 		return fibonacciNumbers
 	}
 
-	func onlyEvenFibonacciNumbersFrom(fibonacciNumbers: [Int]) -> [Int] {
+	private func onlyEvenFibonacciNumbersFrom(fibonacciNumbers: [Int]) -> [Int] {
 		var evenFibonacciNumbers = [Int]()
 		for fibonacciNumber in fibonacciNumbers {
 			if (fibonacciNumber % 2 == 0) {
