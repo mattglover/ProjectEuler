@@ -20,8 +20,9 @@ class Problem0002_Even_Fibonacci_NumbersTests: XCTestCase {
 	}
 
 	func testSumOfEvenFibonacciNumbersFromFirst10Terms_Is44() {
-		XCTAssertEqual(sut.sumOfEvenFibonacciNumbersLessThan(maxNumber: 90), 44);
+		XCTAssertEqual(44, sut.sumOfEvenFibonacciNumbersLessThan(maxNumber: 90));
 	}
+	
 }
 
 
