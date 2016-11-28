@@ -17,12 +17,10 @@ class Problem0003 {
 
 	func primeFactorsFor(number: Int) -> [Int] {
 		let allPrimeNumbers = allPrimeNumbersUpTo(number: number)
-		print("Number of Prime Numbers : \(allPrimeNumbers.count)")
 		var primeFactors = [Int]()
 
 		for primeNumber in allPrimeNumbers {
 			if (number % primeNumber == 0) {
-				print("Adding Prime Factor: \(primeNumber)")
 				primeFactors.append(primeNumber)
 			}
 		}

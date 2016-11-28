@@ -44,5 +44,8 @@ class Problem0003_Largest_Prime_FactorTests: XCTestCase {
 		XCTAssertEqual(23, primeFactors[1])
 	}
 
+	func testLargestPrimeFactorsOf299_is23() {
+		XCTAssertEqual(23, sut.largestPrimeFactorFor(number: 299))
+	}
 
 }
