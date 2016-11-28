@@ -11,17 +11,48 @@ import Foundation
 
 class Problem0004 {
 
-	func largestPalindromeFromNumberOfDigits(_ digits: Int) -> Int {
-		if digits == 2 {
-			return 9009
+	func largestPalindromeFromNumberOfDigits(_ digits: Int) -> Int? {
+
+		var highestNumberAsString = ""
+
+		for _ in 0..<digits {
+			highestNumberAsString.append("9")
 		}
-		return 0
+
+		guard let highestNumber = Int(highestNumberAsString) else {
+			return 0
+		}
+
+		var descendingNumber = highestNumber
+
+		while descendingNumber > 0 {
+			let sum = highestNumber * descendingNumber
+			if (isPalindrome(sum)) {
+				return sum
+			} else {
+				descendingNumber -= 1
+			}
+		}
+
+		return nil
 	}
 
 	func isPalindrome(_ subject: Int) -> Bool {
-		if (subject == 9009) {
-			return true
+
+		var digits = String(subject).characters.map { Int(String($0))! }
+
+		while (digits.count > 1) {
+			let beginningDigit = digits.first
+			let lastDigit      = digits.last
+
+			if (beginningDigit != lastDigit) {
+				return false
+			} else {
+				digits.removeFirst()
+				digits.removeLast()
+			}
 		}
-		return false
+
+		return true
 	}
 }

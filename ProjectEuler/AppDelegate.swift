@@ -27,13 +27,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //		print("Problem 0002: \(answer)")
 
 /// 	Problem 0003		
-		let problem0003 = Problem0003()
-		let number = 29
-		guard let answer = problem0003.largestPrimeFactorFor(number: number) else {
-			print("Problem 0003: No Prime Factors for \(number)")
+//		let problem0003 = Problem0003()
+//		let number = 29
+//		guard let answer = problem0003.largestPrimeFactorFor(number: number) else {
+//			print("Problem 0003: No Prime Factors for \(number)")
+//			return true
+//		}
+//		print("Problem 0003: \(answer)")
+
+///		Project 0004
+		let problem0004 = Problem0004()
+		let numberOfDigits = 3
+		guard let answer = problem0004.largestPalindromeFromNumberOfDigits(3) else {
+			print("Problem 0004: No Palindrome for number of digits: \(numberOfDigits)")
 			return true
 		}
-		print("Problem 0003: \(answer)")
+		print("Problem 0004: \(answer)")
+
+
 
 
 		return true

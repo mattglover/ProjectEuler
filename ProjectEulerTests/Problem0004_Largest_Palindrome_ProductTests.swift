@@ -20,11 +20,28 @@ class Problem0004_Largest_Palindrome_ProductTests: XCTestCase {
 	}
 
 	func testLargestPalindromeFrom2Digits_is9009() {
-		XCTAssertEqual(9009, sut.largestPalindromeFromNumberOfDigits(2))
+		XCTAssertEqual(9009, sut.largestPalindromeFromNumberOfDigits(2)!)
 	}
 
+	// MARK: Palindrome Tests
 	func test9009IsPalindrome_IsTrue() {
 		XCTAssertTrue(sut.isPalindrome(9009))
+	}
+
+	func test990IsPalindrome_IsFalse() {
+		XCTAssertFalse(sut.isPalindrome(990))
+	}
+
+	func test909IsPalindrome_IsTrue() {
+		XCTAssertTrue(sut.isPalindrome(909))
+	}
+
+	func test99IsPalindrome_IsTrue() {
+		XCTAssertTrue(sut.isPalindrome(99))
+	}
+
+	func test914380151083419IsPalindrome_IsTrue() {
+		XCTAssertTrue(sut.isPalindrome(914380151083419))
 	}
 
 }
