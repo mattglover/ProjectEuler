@@ -42,17 +42,17 @@ class Problem0003 {
 
 	private func isPrimeNumber(_ number: Int) -> Bool {
 
-//		if number == 1 {
-//			return false
-//		}
-//
-//		for num in 2..<number {
-//			if number % num == 0 {
-//				return false
-//			}
-//		}
-//		return true
-		return false /// ---- Check out 'the better approach' .. (Idea) Run a performance test to check it's more efficient
+		if number == 1 {
+			return false
+		}
+
+		for num in 2..<number {
+			if number % num == 0 {
+				return false
+			}
+		}
+		return true
+//		return false /// ---- Check out 'the better approach' .. (Idea) Run a performance test to check it's more efficient
 	}
 }
 
