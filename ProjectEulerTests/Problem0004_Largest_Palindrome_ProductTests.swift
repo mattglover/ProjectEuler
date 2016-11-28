@@ -20,7 +20,7 @@ class Problem0004_Largest_Palindrome_ProductTests: XCTestCase {
 	}
 
 	func testLargestPalindromeFrom2Digits_is9009() {
-		XCTAssertEqual(9009, sut.largestPalindromeFromNumberOfDigits(2)!)
+		XCTAssertEqual(9009, sut.largestPalindromeFrom(numberOfDigits: 2)!)
 	}
 
 	// MARK: Palindrome Tests

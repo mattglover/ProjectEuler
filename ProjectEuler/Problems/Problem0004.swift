@@ -11,11 +11,11 @@ import Foundation
 
 class Problem0004 {
 
-	func largestPalindromeFromNumberOfDigits(_ digits: Int) -> Int? {
+	func largestPalindromeFrom(numberOfDigits: Int) -> Int? {
 
 		var highestNumberAsString = ""
 
-		for _ in 0..<digits {
+		for _ in 0..<numberOfDigits {
 			highestNumberAsString.append("9")
 		}
 
