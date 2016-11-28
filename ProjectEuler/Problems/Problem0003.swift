@@ -64,5 +64,5 @@ Example: The prime factors of 15 are 3 and 5 (3×5=15, and 3 and 5 are prime num
 /*
 A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself
 1 is not a prime number
-For Example 37 .. One way is to try each number in turn, from 2 to 37 to see if any of them divide exactly in to 37
+For Example 37 .. One way is to try each number in turn, from 2 to 37 to see if any of them divide exactly in to 37   <---- This very inefficient for large numbers
 */
