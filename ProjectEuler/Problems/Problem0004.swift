@@ -23,15 +23,28 @@ class Problem0004 {
 			return 0
 		}
 
-		var descendingNumber = highestNumber
+		var outerNumber = highestNumber
 
-		while descendingNumber > 0 {
-			let sum = highestNumber * descendingNumber
-			if (isPalindrome(sum)) {
-				return sum
-			} else {
-				descendingNumber -= 1
+		var palindromes = [Int]()
+
+		while outerNumber >= 0 {
+			var innerNumber = highestNumber
+			while innerNumber >= 0 {
+
+				let sum = outerNumber * innerNumber
+
+				if (isPalindrome(sum)) {
+					palindromes.append(sum)
+				}
+				innerNumber -= 1
 			}
+			outerNumber -= 1
+		}
+
+		if (palindromes.count == 1) {
+			return palindromes.first
+		} else if (palindromes.count > 1) {
+			return palindromes.max()!
 		}
 
 		return nil

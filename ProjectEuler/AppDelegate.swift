@@ -36,13 +36,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //		print("Problem 0003: \(answer)")
 
 ///		Project 0004
-		let problem0004 = Problem0004()
-		let numberOfDigits = 3
-		guard let answer = problem0004.largestPalindromeFromNumberOfDigits(3) else {
-			print("Problem 0004: No Palindrome for number of digits: \(numberOfDigits)")
-			return true
-		}
-		print("Problem 0004: \(answer)")
+//		let problem0004 = Problem0004()
+//		let numberOfDigits = 3
+//		guard let answer = problem0004.largestPalindromeFromNumberOfDigits(numberOfDigits) else {
+//			print("Problem 0004: No Palindrome for number of digits: \(numberOfDigits)")
+//			return true
+//		}
+//		print("Problem 0004: \(answer)")
 
 
 
