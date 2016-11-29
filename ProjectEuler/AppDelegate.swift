@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 /// 	Problem 0003 - InComplete ❌
 //		let problem0003 = Problem0003()
-//		let number = 29
+//		let number = 33
 //		guard let answer = problem0003.largestPrimeFactorFor(number: number) else {
 //			print("Problem 0003: No Prime Factors for \(number)")
 //			return true

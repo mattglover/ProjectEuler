@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B2272E951DECA6B50091477F /* Problem0004.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2272E941DECA6B50091477F /* Problem0004.swift */; };
 		B2272E971DECA6D40091477F /* Problem0004_Largest_Palindrome_ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2272E961DECA6D40091477F /* Problem0004_Largest_Palindrome_ProductTests.swift */; };
+		B27199871DEDB80000DDE769 /* Int+PrimeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27199861DEDB80000DDE769 /* Int+PrimeNumber.swift */; };
+		B27199891DEDB91200DDE769 /* Int+PrimeNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27199881DEDB91200DDE769 /* Int+PrimeNumberTests.swift */; };
 		B2A032B01DEDB48600A63C67 /* Int+Palindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A032AF1DEDB48600A63C67 /* Int+Palindrome.swift */; };
 		B2A032B21DEDB54A00A63C67 /* Int+PalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A032B11DEDB54A00A63C67 /* Int+PalindromeTests.swift */; };
 		B2D114DF1DEB5A0700873323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D114DE1DEB5A0700873323 /* AppDelegate.swift */; };
@@ -35,6 +37,8 @@
 /* Begin PBXFileReference section */
 		B2272E941DECA6B50091477F /* Problem0004.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem0004.swift; sourceTree = "<group>"; };
 		B2272E961DECA6D40091477F /* Problem0004_Largest_Palindrome_ProductTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem0004_Largest_Palindrome_ProductTests.swift; sourceTree = "<group>"; };
+		B27199861DEDB80000DDE769 /* Int+PrimeNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+PrimeNumber.swift"; sourceTree = "<group>"; };
+		B27199881DEDB91200DDE769 /* Int+PrimeNumberTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+PrimeNumberTests.swift"; sourceTree = "<group>"; };
 		B2A032AF1DEDB48600A63C67 /* Int+Palindrome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Palindrome.swift"; sourceTree = "<group>"; };
 		B2A032B11DEDB54A00A63C67 /* Int+PalindromeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+PalindromeTests.swift"; sourceTree = "<group>"; };
 		B2D114DB1DEB5A0700873323 /* ProjectEuler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectEuler.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				B2A032AF1DEDB48600A63C67 /* Int+Palindrome.swift */,
+				B27199861DEDB80000DDE769 /* Int+PrimeNumber.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -82,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				B2A032B11DEDB54A00A63C67 /* Int+PalindromeTests.swift */,
+				B27199881DEDB91200DDE769 /* Int+PrimeNumberTests.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -262,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B27199871DEDB80000DDE769 /* Int+PrimeNumber.swift in Sources */,
 				B2A032B01DEDB48600A63C67 /* Int+Palindrome.swift in Sources */,
 				B2D1150B1DEB775C00873323 /* Problem0003.swift in Sources */,
 				B2D115031DEB5B7900873323 /* Problem0001.swift in Sources */,
@@ -277,6 +284,7 @@
 			files = (
 				B2D114FF1DEB5B0600873323 /* Problem0001_Multiples_Of_3_and_5Tests.swift in Sources */,
 				B2D115071DEB68BD00873323 /* Problem0002_Even_Fibonacci_NumbersTests.swift in Sources */,
+				B27199891DEDB91200DDE769 /* Int+PrimeNumberTests.swift in Sources */,
 				B2D115091DEB774100873323 /* Problem0003_Largest_Prime_FactorTests.swift in Sources */,
 				B2A032B21DEDB54A00A63C67 /* Int+PalindromeTests.swift in Sources */,
 				B2272E971DECA6D40091477F /* Problem0004_Largest_Palindrome_ProductTests.swift in Sources */,
