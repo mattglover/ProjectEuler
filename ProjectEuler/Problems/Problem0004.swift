@@ -32,7 +32,7 @@ class Problem0004 {
 				while innerNumber >= 0 {
 
 					let sum = outerNumber * innerNumber
-					if (isPalindrome(sum)) {
+					if (sum.isPalindrome()) {
 						palindromes.append(sum)
 					}
 					innerNumber -= 1
@@ -48,9 +48,5 @@ class Problem0004 {
 		}
 
 		return nil
-	}
-
-	func isPalindrome(_ subject: Int) -> Bool {
-		return subject.isPalindrome()
 	}
 }
