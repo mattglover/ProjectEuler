@@ -4,8 +4,7 @@ import XCTest
 class Int_PrimeNumberTests: XCTestCase {
 
 	var sut: Int!
-
-	// MARK: isPrimeNumber tests
+	
 	func test1_IsNotAPrimeNumber() {
 		sut = 1
 		XCTAssertFalse(sut.isPrimeNumber())

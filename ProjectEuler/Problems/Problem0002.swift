@@ -16,8 +16,9 @@ import Foundation
 class Problem0002 {
 
 	func sumOfEvenFibonacciNumbersLessThan(maxNumber: Int) -> Int {
-		let fibonacciNumbers = fibonacciNumbersLessThan(maxNumber: maxNumber)
-		let evenFibonacciNumbers = onlyEvenFibonacciNumbersFrom(fibonacciNumbers: fibonacciNumbers)
+		let maxNumberMinusOne = maxNumber - 1
+		let fibonacciNumbers = maxNumberMinusOne.fibonacciNumbers()
+		let evenFibonacciNumbers = onlyEvenNumbers(numbers: fibonacciNumbers)
 
 		var sum = 0
 		for evenFibonacciNumber in evenFibonacciNumbers {
@@ -27,34 +28,14 @@ class Problem0002 {
 		return sum
 	}
 
-	private func fibonacciNumbersLessThan(maxNumber: Int) -> [Int] {
-
-		var fibonacciNumbers = [Int]()
-
-		var previousFibonacciNumber = 0
-		var nextFibonacciNumber = 1
-
-		while (previousFibonacciNumber < maxNumber) {
-			let sum = previousFibonacciNumber + nextFibonacciNumber
-			previousFibonacciNumber = nextFibonacciNumber
-			nextFibonacciNumber = sum
-
-			if (sum < maxNumber) {
-    			fibonacciNumbers.append(sum)
+	private func onlyEvenNumbers(numbers: [Int]) -> [Int] {
+		var evenNumbers = [Int]()
+		for number in numbers {
+			if (number % 2 == 0) {
+				evenNumbers.append(number)
 			}
 		}
 
-		return fibonacciNumbers
-	}
-
-	private func onlyEvenFibonacciNumbersFrom(fibonacciNumbers: [Int]) -> [Int] {
-		var evenFibonacciNumbers = [Int]()
-		for fibonacciNumber in fibonacciNumbers {
-			if (fibonacciNumber % 2 == 0) {
-    			evenFibonacciNumbers.append(fibonacciNumber)
-			}
-		}
-
-		return evenFibonacciNumbers
+		return evenNumbers
 	}
 }
