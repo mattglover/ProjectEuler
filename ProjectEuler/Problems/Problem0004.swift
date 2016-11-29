@@ -29,15 +29,15 @@ class Problem0004 {
 
 		while outerNumber >= 0 {
 			var innerNumber = highestNumber
-			while innerNumber >= 0 {
+				while innerNumber >= 0 {
 
-				let sum = outerNumber * innerNumber
-
-				if (isPalindrome(sum)) {
-					palindromes.append(sum)
+					let sum = outerNumber * innerNumber
+					if (isPalindrome(sum)) {
+						palindromes.append(sum)
+					}
+					innerNumber -= 1
 				}
-				innerNumber -= 1
-			}
+
 			outerNumber -= 1
 		}
 
@@ -51,21 +51,6 @@ class Problem0004 {
 	}
 
 	func isPalindrome(_ subject: Int) -> Bool {
-
-		var digits = String(subject).characters.map { Int(String($0))! }
-
-		while (digits.count > 1) {
-			let beginningDigit = digits.first
-			let lastDigit      = digits.last
-
-			if (beginningDigit != lastDigit) {
-				return false
-			} else {
-				digits.removeFirst()
-				digits.removeLast()
-			}
-		}
-
-		return true
+		return subject.isPalindrome()
 	}
 }

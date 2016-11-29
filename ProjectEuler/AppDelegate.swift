@@ -16,17 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-/// 	Problem 0001
+/// 	Problem 0001 - Correct ✅
 //		let problem0001 = Problem0001()
 //		let answer = problem0001.sumOfMultiples3And5Below(number: 1000)
 //		print("Problem 0001: \(answer)")
 
-/// 	Problem 0002
+/// 	Problem 0002 - Correct ✅
 //		let problem0002 = Problem0002()
 //		let answer = problem0002.sumOfEvenFibonacciNumbersLessThan(maxNumber: 4000000)
 //		print("Problem 0002: \(answer)")
 
-/// 	Problem 0003		
+/// 	Problem 0003 - InComplete ❌
 //		let problem0003 = Problem0003()
 //		let number = 29
 //		guard let answer = problem0003.largestPrimeFactorFor(number: number) else {
@@ -35,17 +35,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //		}
 //		print("Problem 0003: \(answer)")
 
-///		Project 0004
+///		Project 0004 - Correct ✅
 //		let problem0004 = Problem0004()
 //		let numberOfDigits = 3
-//		guard let answer = problem0004.largestPalindromeFromNumberOfDigits(numberOfDigits) else {
+//		guard let answer = problem0004.largestPalindromeFrom(numberOfDigits: numberOfDigits) else {
 //			print("Problem 0004: No Palindrome for number of digits: \(numberOfDigits)")
 //			return true
 //		}
 //		print("Problem 0004: \(answer)")
-
-
-
 
 		return true
 	}
