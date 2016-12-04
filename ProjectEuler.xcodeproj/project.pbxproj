@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B2272E951DECA6B50091477F /* Problem0004.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2272E941DECA6B50091477F /* Problem0004.swift */; };
 		B2272E971DECA6D40091477F /* Problem0004_Largest_Palindrome_ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2272E961DECA6D40091477F /* Problem0004_Largest_Palindrome_ProductTests.swift */; };
+		B23649101DF44C55009122EC /* Problem0005_Smallest_MultipleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B236490F1DF44C55009122EC /* Problem0005_Smallest_MultipleTests.swift */; };
+		B23649121DF44C86009122EC /* Problem0005.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23649111DF44C86009122EC /* Problem0005.swift */; };
 		B27199871DEDB80000DDE769 /* Int+PrimeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27199861DEDB80000DDE769 /* Int+PrimeNumber.swift */; };
 		B27199891DEDB91200DDE769 /* Int+PrimeNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27199881DEDB91200DDE769 /* Int+PrimeNumberTests.swift */; };
 		B2862C801DEE108E0032C654 /* Int+FibonacciNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2862C7F1DEE108E0032C654 /* Int+FibonacciNumberTests.swift */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		B2272E941DECA6B50091477F /* Problem0004.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem0004.swift; sourceTree = "<group>"; };
 		B2272E961DECA6D40091477F /* Problem0004_Largest_Palindrome_ProductTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem0004_Largest_Palindrome_ProductTests.swift; sourceTree = "<group>"; };
+		B236490F1DF44C55009122EC /* Problem0005_Smallest_MultipleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem0005_Smallest_MultipleTests.swift; sourceTree = "<group>"; };
+		B23649111DF44C86009122EC /* Problem0005.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem0005.swift; sourceTree = "<group>"; };
 		B27199861DEDB80000DDE769 /* Int+PrimeNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+PrimeNumber.swift"; sourceTree = "<group>"; };
 		B27199881DEDB91200DDE769 /* Int+PrimeNumberTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+PrimeNumberTests.swift"; sourceTree = "<group>"; };
 		B2862C7F1DEE108E0032C654 /* Int+FibonacciNumberTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+FibonacciNumberTests.swift"; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 				B2D115061DEB68BD00873323 /* Problem0002_Even_Fibonacci_NumbersTests.swift */,
 				B2D115081DEB774100873323 /* Problem0003_Largest_Prime_FactorTests.swift */,
 				B2272E961DECA6D40091477F /* Problem0004_Largest_Palindrome_ProductTests.swift */,
+				B236490F1DF44C55009122EC /* Problem0005_Smallest_MultipleTests.swift */,
 			);
 			name = Problems;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 				B2D115041DEB688D00873323 /* Problem0002.swift */,
 				B2D1150A1DEB775C00873323 /* Problem0003.swift */,
 				B2272E941DECA6B50091477F /* Problem0004.swift */,
+				B23649111DF44C86009122EC /* Problem0005.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -278,6 +284,7 @@
 				B2A032B01DEDB48600A63C67 /* Int+Palindrome.swift in Sources */,
 				B2862C821DEE10F70032C654 /* Int+Fibonacci.swift in Sources */,
 				B2D1150B1DEB775C00873323 /* Problem0003.swift in Sources */,
+				B23649121DF44C86009122EC /* Problem0005.swift in Sources */,
 				B2D115031DEB5B7900873323 /* Problem0001.swift in Sources */,
 				B2D114DF1DEB5A0700873323 /* AppDelegate.swift in Sources */,
 				B2272E951DECA6B50091477F /* Problem0004.swift in Sources */,
@@ -292,6 +299,7 @@
 				B2D114FF1DEB5B0600873323 /* Problem0001_Multiples_Of_3_and_5Tests.swift in Sources */,
 				B2D115071DEB68BD00873323 /* Problem0002_Even_Fibonacci_NumbersTests.swift in Sources */,
 				B27199891DEDB91200DDE769 /* Int+PrimeNumberTests.swift in Sources */,
+				B23649101DF44C55009122EC /* Problem0005_Smallest_MultipleTests.swift in Sources */,
 				B2862C801DEE108E0032C654 /* Int+FibonacciNumberTests.swift in Sources */,
 				B2D115091DEB774100873323 /* Problem0003_Largest_Prime_FactorTests.swift in Sources */,
 				B2A032B21DEDB54A00A63C67 /* Int+PalindromeTests.swift in Sources */,
