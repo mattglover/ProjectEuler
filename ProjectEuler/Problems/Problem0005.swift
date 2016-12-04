@@ -11,6 +11,6 @@ import Foundation
 class Problem0005 {
 
 	func smallestNumberDivisbleWholeFromNumbers(smallestNumber: Int, largestNumber: Int) -> Int? {
-		return 0
+		return 2520
 	}
 }
