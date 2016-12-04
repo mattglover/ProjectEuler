@@ -44,6 +44,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //		}
 //		print("Problem 0004: \(answer)")
 
+///		Project 0005 - Correct ✅
+//		let problem0005 = Problem0005()
+//		guard let answer = problem0005.smallestNumberDivisbleWholeFromNumbers(smallestNumber: 1, largestNumber: 20) else {
+//			print("Problem 0005: Unable to find the smallest Divisible Number")
+//			return true
+//		}
+//		print("Problem 0005: \(answer)")
+
 		return true
 	}
 }

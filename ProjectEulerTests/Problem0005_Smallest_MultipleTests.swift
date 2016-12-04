@@ -23,6 +23,39 @@ class Problem0005_Smallest_MultipleTests: XCTestCase {
 		}
 	}
 
+	func testSmallestNumberThatCanBeDividedByEachNumberFrom1To5WithoutRemainder_60() {
+		if let smallestNumberThatCanBeDivided = sut.smallestNumberDivisbleWholeFromNumbers(smallestNumber: 1, largestNumber: 5) {
+			XCTAssertEqual(60, smallestNumberThatCanBeDivided);
+		} else {
+			XCTFail()
+		}
+	}
+
+	func testSmallestNumberThatCanBeDividedByEachNumberFrom1To3WithoutRemainder_6() {
+		if let smallestNumberThatCanBeDivided = sut.smallestNumberDivisbleWholeFromNumbers(smallestNumber: 1, largestNumber: 3) {
+			XCTAssertEqual(6, smallestNumberThatCanBeDivided);
+		} else {
+			XCTFail()
+		}
+	}
+
+	func testMultiples10StartingFrom1For10Times_returnsCorrectArray() {
+
+		let multiples = sut.multiples(of: 10, startingFromMulitplier: 1, numberOfMultiples: 10)
+		XCTAssertEqual(10, multiples.count);
+		XCTAssertEqual(10, multiples[0]);
+		XCTAssertEqual(50, multiples[4]);
+		XCTAssertEqual(100, multiples[9]);
+	}
+
+	func testMultiples10StartingFrom11For10Times_returnsCorrectArray() {
+
+		let multiples = sut.multiples(of: 10, startingFromMulitplier: 11, numberOfMultiples: 10)
+		XCTAssertEqual(10, multiples.count);
+		XCTAssertEqual(110, multiples[0]);
+		XCTAssertEqual(150, multiples[4]);
+		XCTAssertEqual(200, multiples[9]);
+	}
 }
 
 /*
