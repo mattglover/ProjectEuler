@@ -52,6 +52,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //		}
 //		print("Problem 0005: \(answer)")
 
+///		Project 0006 - Correct ✅
+//		let problem0006 = Problem0006()
+//		let answer = problem0006.sumSquareDifferenceOfNumbers(from: 1, to: 100)
+//		print("Problem 0006: \(answer)")
+
 		return true
 	}
 }
