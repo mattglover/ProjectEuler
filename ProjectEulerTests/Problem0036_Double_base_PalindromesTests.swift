@@ -41,9 +41,4 @@ class Problem0036_Double_base_PalindromesTests: XCTestCase {
 	func test313_IsPalindromicInBothBases() {
 		XCTAssertTrue(sut.isPalindromicInBothBases(number:313))
 	}
-
-	// MARK: Binary Conversion Tests
-	func testConverting10ToBinary_1010() {
-		XCTAssertEqual("1010", sut.convertToBinaryString(decimal: 10))
-	}
 }

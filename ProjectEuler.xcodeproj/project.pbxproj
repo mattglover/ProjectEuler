@@ -23,6 +23,10 @@
 		B2A399B91DF8A3C7004BCEAF /* Problem0007_10001st_PrimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A399B81DF8A3C7004BCEAF /* Problem0007_10001st_PrimeTests.swift */; };
 		B2AEAAA51DF8B2900001CD60 /* Problem0036.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AEAAA41DF8B2900001CD60 /* Problem0036.swift */; };
 		B2AEAAA71DF8B2DA0001CD60 /* Problem0036_Double_base_PalindromesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AEAAA61DF8B2DA0001CD60 /* Problem0036_Double_base_PalindromesTests.swift */; };
+		B2AEAAA91DF8C7FF0001CD60 /* String+Palindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AEAAA81DF8C7FF0001CD60 /* String+Palindrome.swift */; };
+		B2AEAAAB1DF8C8770001CD60 /* Int+Binary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AEAAAA1DF8C8770001CD60 /* Int+Binary.swift */; };
+		B2AEAAAD1DF8C90E0001CD60 /* Int+BinaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AEAAAC1DF8C90E0001CD60 /* Int+BinaryTests.swift */; };
+		B2AEAAAF1DF8C9A20001CD60 /* String+PalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AEAAAE1DF8C9A20001CD60 /* String+PalindromeTests.swift */; };
 		B2D114DF1DEB5A0700873323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D114DE1DEB5A0700873323 /* AppDelegate.swift */; };
 		B2D114E61DEB5A0700873323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D114E51DEB5A0700873323 /* Assets.xcassets */; };
 		B2D114E91DEB5A0700873323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D114E71DEB5A0700873323 /* LaunchScreen.storyboard */; };
@@ -61,6 +65,10 @@
 		B2A399B81DF8A3C7004BCEAF /* Problem0007_10001st_PrimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem0007_10001st_PrimeTests.swift; sourceTree = "<group>"; };
 		B2AEAAA41DF8B2900001CD60 /* Problem0036.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem0036.swift; sourceTree = "<group>"; };
 		B2AEAAA61DF8B2DA0001CD60 /* Problem0036_Double_base_PalindromesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem0036_Double_base_PalindromesTests.swift; sourceTree = "<group>"; };
+		B2AEAAA81DF8C7FF0001CD60 /* String+Palindrome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Palindrome.swift"; sourceTree = "<group>"; };
+		B2AEAAAA1DF8C8770001CD60 /* Int+Binary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Binary.swift"; sourceTree = "<group>"; };
+		B2AEAAAC1DF8C90E0001CD60 /* Int+BinaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+BinaryTests.swift"; sourceTree = "<group>"; };
+		B2AEAAAE1DF8C9A20001CD60 /* String+PalindromeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+PalindromeTests.swift"; sourceTree = "<group>"; };
 		B2D114DB1DEB5A0700873323 /* ProjectEuler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectEuler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D114DE1DEB5A0700873323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2D114E51DEB5A0700873323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,9 +105,11 @@
 		B2A032AE1DEDB43600A63C67 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B2AEAAA81DF8C7FF0001CD60 /* String+Palindrome.swift */,
 				B2A032AF1DEDB48600A63C67 /* Int+Palindrome.swift */,
 				B27199861DEDB80000DDE769 /* Int+PrimeNumber.swift */,
 				B2862C811DEE10F70032C654 /* Int+Fibonacci.swift */,
+				B2AEAAAA1DF8C8770001CD60 /* Int+Binary.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -110,6 +120,8 @@
 				B2A032B11DEDB54A00A63C67 /* Int+PalindromeTests.swift */,
 				B27199881DEDB91200DDE769 /* Int+PrimeNumberTests.swift */,
 				B2862C7F1DEE108E0032C654 /* Int+FibonacciNumberTests.swift */,
+				B2AEAAAC1DF8C90E0001CD60 /* Int+BinaryTests.swift */,
+				B2AEAAAE1DF8C9A20001CD60 /* String+PalindromeTests.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -298,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2AEAAAB1DF8C8770001CD60 /* Int+Binary.swift in Sources */,
 				B27199871DEDB80000DDE769 /* Int+PrimeNumber.swift in Sources */,
 				B2A399B71DF8A376004BCEAF /* Problem0007.swift in Sources */,
 				B2A032B01DEDB48600A63C67 /* Int+Palindrome.swift in Sources */,
@@ -306,6 +319,7 @@
 				B23649121DF44C86009122EC /* Problem0005.swift in Sources */,
 				B2D115031DEB5B7900873323 /* Problem0001.swift in Sources */,
 				B2D114DF1DEB5A0700873323 /* AppDelegate.swift in Sources */,
+				B2AEAAA91DF8C7FF0001CD60 /* String+Palindrome.swift in Sources */,
 				B2A399B31DF8992A004BCEAF /* Problem0006.swift in Sources */,
 				B2272E951DECA6B50091477F /* Problem0004.swift in Sources */,
 				B2AEAAA51DF8B2900001CD60 /* Problem0036.swift in Sources */,
@@ -326,7 +340,9 @@
 				B2D115091DEB774100873323 /* Problem0003_Largest_Prime_FactorTests.swift in Sources */,
 				B2A032B21DEDB54A00A63C67 /* Int+PalindromeTests.swift in Sources */,
 				B2AEAAA71DF8B2DA0001CD60 /* Problem0036_Double_base_PalindromesTests.swift in Sources */,
+				B2AEAAAF1DF8C9A20001CD60 /* String+PalindromeTests.swift in Sources */,
 				B2272E971DECA6D40091477F /* Problem0004_Largest_Palindrome_ProductTests.swift in Sources */,
+				B2AEAAAD1DF8C90E0001CD60 /* Int+BinaryTests.swift in Sources */,
 				B2A399B51DF89A85004BCEAF /* Problem0006_Sum_Square_DifferenceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
