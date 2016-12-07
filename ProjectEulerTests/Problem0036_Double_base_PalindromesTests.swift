@@ -15,30 +15,35 @@ class Problem0036_Double_base_PalindromesTests: XCTestCase {
 		super.tearDown()
 	}
 
+/// Time consuming test
+//	func testSumOfPalindromicNumbersInBothBasesUpto999999_IsNot286602() {
+//		XCTAssertNotEqual(286602, sut.sumOfPalindromicNumbersInBothBasesUpto(number: 999999))
+//	}
+
 	func testSumOfPalindromicNumbersInBothBasesUpto10_Is25() {
 		// Palindromic Numbers = 1(1), 3(11), 5(101), 7(111), 9(1001) = 25
 		XCTAssertEqual(25, sut.sumOfPalindromicNumbersInBothBasesUpto(number: 10))
 	}
 
-	// MARK: IsPalindromicInBothBases Tests
-	func test585_IsPalindromicInBothBases() { // base 2 and base 10
+	// MARK: IsPalindromicInBothBases Tests (base 2 and base 10)
+	func test585_IsPalindromicInBothBases() {
 		XCTAssertTrue(sut.isPalindromicInBothBases(number:585))
 	}
 
-	func test1_IsPalindromicInBothBases() { // base 2 and base 10
+	func test1_IsPalindromicInBothBases() {
 		XCTAssertTrue(sut.isPalindromicInBothBases(number:1))
 	}
 
-	func test3_IsPalindromicInBothBases() { // base 2 and base 10
-		XCTAssertTrue(sut.isPalindromicInBothBases(number:3))
+	func test33_IsPalindromicInBothBases() {
+		XCTAssertTrue(sut.isPalindromicInBothBases(number:33))
 	}
 
-	func test9_IsPalindromicInBothBases() { // base 2 and base 10
-		XCTAssertTrue(sut.isPalindromicInBothBases(number:9))
+	func test313_IsPalindromicInBothBases() {
+		XCTAssertTrue(sut.isPalindromicInBothBases(number:313))
 	}
 
 	// MARK: Binary Conversion Tests
 	func testConverting10ToBinary_1010() {
-		XCTAssertEqual(1010, sut.convertToBinary(decimal: 10))
+		XCTAssertEqual("1010", sut.convertToBinaryString(decimal: 10))
 	}
 }

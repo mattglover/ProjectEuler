@@ -66,6 +66,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //		}
 //		print("Problem 0007: \(answer)")
 
+///		Project 0036 - Correct ✅
+//		let problem0036 = Problem0036()
+//		let answer = problem0036.sumOfPalindromicNumbersInBothBasesUpto(number: 999999)
+//		print("Problem 0036: \(answer)")
+
 		return true
 	}
 }

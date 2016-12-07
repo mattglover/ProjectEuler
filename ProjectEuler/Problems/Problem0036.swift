@@ -26,20 +26,38 @@ class Problem0036 {
 	func isPalindromicInBothBases(number: Int) -> Bool {
 		if number.isPalindrome() {
 
-			guard let numberAsBinary = convertToBinary(decimal: number) else {
+			guard let binaryAsString = convertToBinaryString(decimal: number) else {
 				return false
 			}
 
-			if numberAsBinary.isPalindrome() {
-    			return true
+			if isPalindrome(text: binaryAsString) {
+				return true
 			}
 		}
 		return false
 	}
 
 	// Binary Conversion
-	func convertToBinary(decimal: Int) -> Int? {
-		let binaryAsString = String(decimal, radix: 2)
-		return Int(binaryAsString)
+	func convertToBinaryString(decimal: Int) -> String? {
+		return String(decimal, radix: 2)
 	}
+
+	func isPalindrome(text: String) -> Bool {
+		var characters = text.characters
+
+		while (characters.count > 1) {
+			let beginningCharacter = characters.first
+			let lastCharacter      = characters.last
+
+			if (beginningCharacter != lastCharacter) {
+				return false
+			} else {
+				characters.removeFirst()
+				characters.removeLast()
+			}
+		}
+
+		return true
+	}
+
 }
