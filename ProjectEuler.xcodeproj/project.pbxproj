@@ -17,6 +17,8 @@
 		B2862C821DEE10F70032C654 /* Int+Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2862C811DEE10F70032C654 /* Int+Fibonacci.swift */; };
 		B2A032B01DEDB48600A63C67 /* Int+Palindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A032AF1DEDB48600A63C67 /* Int+Palindrome.swift */; };
 		B2A032B21DEDB54A00A63C67 /* Int+PalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A032B11DEDB54A00A63C67 /* Int+PalindromeTests.swift */; };
+		B2A399B31DF8992A004BCEAF /* Problem0006.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A399B21DF8992A004BCEAF /* Problem0006.swift */; };
+		B2A399B51DF89A85004BCEAF /* Problem0006_Sum_Square_Difference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A399B41DF89A85004BCEAF /* Problem0006_Sum_Square_Difference.swift */; };
 		B2D114DF1DEB5A0700873323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D114DE1DEB5A0700873323 /* AppDelegate.swift */; };
 		B2D114E61DEB5A0700873323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2D114E51DEB5A0700873323 /* Assets.xcassets */; };
 		B2D114E91DEB5A0700873323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2D114E71DEB5A0700873323 /* LaunchScreen.storyboard */; };
@@ -49,6 +51,8 @@
 		B2862C811DEE10F70032C654 /* Int+Fibonacci.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Fibonacci.swift"; sourceTree = "<group>"; };
 		B2A032AF1DEDB48600A63C67 /* Int+Palindrome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Palindrome.swift"; sourceTree = "<group>"; };
 		B2A032B11DEDB54A00A63C67 /* Int+PalindromeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+PalindromeTests.swift"; sourceTree = "<group>"; };
+		B2A399B21DF8992A004BCEAF /* Problem0006.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem0006.swift; sourceTree = "<group>"; };
+		B2A399B41DF89A85004BCEAF /* Problem0006_Sum_Square_Difference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem0006_Sum_Square_Difference.swift; sourceTree = "<group>"; };
 		B2D114DB1DEB5A0700873323 /* ProjectEuler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectEuler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D114DE1DEB5A0700873323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2D114E51DEB5A0700873323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 				B2D115081DEB774100873323 /* Problem0003_Largest_Prime_FactorTests.swift */,
 				B2272E961DECA6D40091477F /* Problem0004_Largest_Palindrome_ProductTests.swift */,
 				B236490F1DF44C55009122EC /* Problem0005_Smallest_MultipleTests.swift */,
+				B2A399B41DF89A85004BCEAF /* Problem0006_Sum_Square_Difference.swift */,
 			);
 			name = Problems;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 				B2D1150A1DEB775C00873323 /* Problem0003.swift */,
 				B2272E941DECA6B50091477F /* Problem0004.swift */,
 				B23649111DF44C86009122EC /* Problem0005.swift */,
+				B2A399B21DF8992A004BCEAF /* Problem0006.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -287,6 +293,7 @@
 				B23649121DF44C86009122EC /* Problem0005.swift in Sources */,
 				B2D115031DEB5B7900873323 /* Problem0001.swift in Sources */,
 				B2D114DF1DEB5A0700873323 /* AppDelegate.swift in Sources */,
+				B2A399B31DF8992A004BCEAF /* Problem0006.swift in Sources */,
 				B2272E951DECA6B50091477F /* Problem0004.swift in Sources */,
 				B2D115051DEB688D00873323 /* Problem0002.swift in Sources */,
 			);
@@ -304,6 +311,7 @@
 				B2D115091DEB774100873323 /* Problem0003_Largest_Prime_FactorTests.swift in Sources */,
 				B2A032B21DEDB54A00A63C67 /* Int+PalindromeTests.swift in Sources */,
 				B2272E971DECA6D40091477F /* Problem0004_Largest_Palindrome_ProductTests.swift in Sources */,
+				B2A399B51DF89A85004BCEAF /* Problem0006_Sum_Square_Difference.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
