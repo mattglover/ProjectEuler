@@ -9,7 +9,27 @@ import Foundation
 
 class Problem0007 {
 
-	func primeNumber(at: Int) -> Int {
-		return 0
+	func primeNumber(at findXthPrime: Int) -> Int? {
+
+		guard findXthPrime > 1 else {
+			return nil
+		}
+
+		var number = 2
+		var primeCounter = 1
+		while primeCounter != findXthPrime {
+
+			if number.isPrimeNumber() {
+				primeCounter += 1
+			}
+
+			if primeCounter == findXthPrime {
+    			break
+			}
+
+			number += 1
+		}
+
+		return number
 	}
 }
