@@ -10,14 +10,29 @@ import Foundation
 
 class Problem0036 {
 
-
 	func sumOfPalindromicNumbersInBothBasesUpto(number: Int) -> Int {
-		return 0
+
+		var sumOfPalindromicNumbersInBothBases = 0
+
+		for number in 1...number {
+			if isPalindromicInBothBases(number: number) {
+				sumOfPalindromicNumbersInBothBases += number
+			}
+		}
+
+		return sumOfPalindromicNumbersInBothBases
 	}
 
 	func isPalindromicInBothBases(number: Int) -> Bool {
-		if number == 585 {
-			return true
+		if number.isPalindrome() {
+
+			guard let numberAsBinary = convertToBinary(decimal: number) else {
+				return false
+			}
+
+			if numberAsBinary.isPalindrome() {
+    			return true
+			}
 		}
 		return false
 	}
@@ -27,5 +42,4 @@ class Problem0036 {
 		let binaryAsString = String(decimal, radix: 2)
 		return Int(binaryAsString)
 	}
-
 }
