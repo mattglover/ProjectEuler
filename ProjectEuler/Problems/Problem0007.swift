@@ -11,7 +11,7 @@ class Problem0007 {
 
 	func primeNumber(at findXthPrime: Int) -> Int? {
 
-		guard findXthPrime > 1 else {
+		guard findXthPrime > 0 else {
 			return nil
 		}
 
