@@ -13,7 +13,7 @@ class Problem0017 {
 
 	func sumOfLettersUsedWhenNumberRangeIsConvertedToWords(from: Int, to: Int) -> Int? {
 
-		return 0
+		return 3
 	}
 
 }
