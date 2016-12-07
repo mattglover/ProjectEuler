@@ -16,16 +16,16 @@ class Problem0007_10001st_PrimeTests: XCTestCase {
 	}
 
 	func test6thPrimeNumber_is13() {
-		XCTAssertEqual(13, sut.primeNumber(at: 6))
+		XCTAssertEqual(13, sut.primeNumber(at: 6)!)
 	}
 
 	func test1stPrimeNumber_is2() {
-		XCTAssertEqual(2, sut.primeNumber(at: 1))
+		XCTAssertEqual(2, sut.primeNumber(at: 1)!)
 	}
 
 	// Sanity Test
 	func test10thPrimeNumber_is29() {
-		XCTAssertEqual(29, sut.primeNumber(at: 10))
+		XCTAssertEqual(29, sut.primeNumber(at: 10)!)
 	}
     
 }

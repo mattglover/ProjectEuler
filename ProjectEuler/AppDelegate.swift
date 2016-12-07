@@ -57,6 +57,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //		let answer = problem0006.sumSquareDifferenceOfNumbers(from: 1, to: 100)
 //		print("Problem 0006: \(answer)")
 
+///		Project 0007 - Correct ✅
+//		let problem0007 = Problem0007()
+//		let primeNumberAtNumber = 10001
+//		guard let answer = problem0007.primeNumber(at: primeNumberAtNumber) else {
+//			print("Problem 0007: Unable to find prime number at: \(primeNumberAtNumber)")
+//			return true
+//		}
+//		print("Problem 0007: \(answer)")
+
 		return true
 	}
 }
