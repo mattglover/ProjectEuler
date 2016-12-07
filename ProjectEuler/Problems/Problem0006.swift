@@ -15,10 +15,18 @@ import Foundation
 class Problem0006 {
 
 	func sumSquareDifferenceOfNumbers(from: Int, to: Int) -> Int {
-		if from == 1 && to == 10 {
-			return 2640
+
+		var sumOfIndividuals = 0
+		var individualSquareTotals = [Int]()
+		for individualNumber in from...to {
+			sumOfIndividuals += individualNumber
+			individualSquareTotals.append(individualNumber * individualNumber)
 		}
 
-		return 0
+		let sumOfIndiviualNumersSquared = sumOfIndividuals * sumOfIndividuals
+		let sumOfIndividualSquareTotals = individualSquareTotals.reduce(0) { $0 + $1 }
+
+		return sumOfIndiviualNumersSquared - sumOfIndividualSquareTotals
 	}
+
 }
