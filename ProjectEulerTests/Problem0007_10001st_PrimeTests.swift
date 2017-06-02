@@ -22,6 +22,10 @@ class Problem0007_10001st_PrimeTests: XCTestCase {
 	func test1stPrimeNumber_is2() {
 		XCTAssertEqual(2, sut.primeNumber(at: 1)!)
 	}
+    
+    func testNegativeNumber_returnNil() {
+        XCTAssertNil(sut.primeNumber(at: -10))
+    }
 
 	// Sanity Test
 	func test10thPrimeNumber_is29() {
